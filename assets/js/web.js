@@ -1,11 +1,21 @@
+
 $(document).ready(function () {
+    
+    var id = setInterval(_handlerProgresBar, 25);
+    
+    function _handlerProgresBar() {
+        if (width >= 100) {
+            body.style.overflow = 'visible';
+            progressContainer.style.display = 'none';
+            clearInterval(id);
+        } else {
+            width++;
+            body.style.overflow = 'hidden';
+            progressBar.style.width = width + '%';
+        }
+    }
 
-    window.onscroll = function () { _handlerHeaderFixed() }
-
-    var headerMobile = document.getElementById("header-mobile-bar-fixed");
-    var headerDesktop = document.getElementById("header-bar");
-    var sticky = headerMobile.offsetTop;
-    var sticky = headerDesktop.offsetTop;
+    window.onscroll = () => { _handlerHeaderFixed() }
 
     function _handlerHeaderFixed() {
         if (window.pageYOffset > sticky) {
@@ -30,21 +40,21 @@ $(document).ready(function () {
     })
 
     var slideIndex = 1;
-    showSlides(slideIndex);
+    _handlerShowSlides(slideIndex);
 
     $(".prev").click(function () {
-        showSlides(slideIndex += -1);
+        _handlerShowSlides(slideIndex += -1);
     })
 
     $(".next").click(function () {
-        showSlides(slideIndex += 1);
+        _handlerShowSlides(slideIndex += 1);
     })
 
     $(".dot").click(function (n) {
-        showSlides( slideIndex = (parseInt(n.currentTarget.id)));
+        _handlerShowSlides(slideIndex = (parseInt(n.currentTarget.id)));
     })
 
-    function showSlides(n) {
+    function _handlerShowSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");

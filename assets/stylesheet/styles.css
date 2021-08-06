@@ -2,6 +2,67 @@
   font-family: "Muli-Regular";
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.progress-container {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.progress-container .progress {
+  width: 100%;
+  max-width: 260px;
+  height: 6px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-container .progress .progress-bar {
+  display: block;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffd33d), color-stop(17%, #ea4aaa), color-stop(34%, #b34bff), color-stop(51%, #01feff), color-stop(68%, #ffd33d), color-stop(85%, #ea4aaa), to(#b34bff));
+  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+  background-size: 300% 100%;
+  -webkit-animation: progress-animation 2s linear infinite;
+          animation: progress-animation 2s linear infinite;
+}
+
+@-webkit-keyframes progress-animation {
+  from {
+    background-position: 100%;
+  }
+  to {
+    background-position: 0;
+  }
+}
+
+@keyframes progress-animation {
+  from {
+    background-position: 100%;
+  }
+  to {
+    background-position: 0;
+  }
 }
 
 html {
@@ -326,6 +387,7 @@ html {
   }
   main .carousel-section {
     padding: 120px 0;
+    padding: 0 16px;
   }
   main .carousel-section h1 {
     font-size: 28;
@@ -333,12 +395,12 @@ html {
     font-family: "Muli-ExtraBold";
     max-width: 1120px;
     margin-bottom: 32px;
-    padding: 0 16px;
   }
   main .carousel-section .slider {
-    margin: 0 auto;
+    margin: 0 auto 64px auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    padding: 0 -16px;
     /* Slideshow container */
     /* Next & previous buttons */
     /* Position the "next button" to the right */
@@ -358,7 +420,6 @@ html {
     display: none;
   }
   main .carousel-section .slider .slideshow-container {
-    max-width: 1000px;
     position: relative;
     margin: auto;
   }
@@ -629,22 +690,50 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 40px;
+    padding: 16px 0;
   }
-  header .header-mobile-section .header-content .inner-wrapper .icon-close {
+  header .header-mobile-section .header-content .inner-wrapper .side-drawer-wrapper {
+    margin-bottom: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    border-color: #424245;
+    padding: 16px 16px 32px 16px;
+  }
+  header .header-mobile-section .header-content .inner-wrapper .side-drawer-wrapper .icon-close {
     width: 32;
     height: 32;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    margin-bottom: 24px;
+  }
+  header .header-mobile-section .header-content .inner-wrapper .side-drawer-wrapper .icon-logo {
+    width: 100%;
+    max-height: 78;
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1%;
+    z-index: -1;
   }
   header .header-mobile-section .header-content .inner-wrapper .nav-link-mobile {
     text-decoration: none;
+    padding: 0 48px;
   }
   header .header-mobile-section .header-content .inner-wrapper .nav-link-mobile h1 {
     color: #2e2e2e;
     font-family: "Muli-Bold";
-    font-size: 28px;
+    font-size: 24px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: #424245;
     margin-bottom: 32px;
   }
   header .header-mobile-section .header-bar {
