@@ -53,6 +53,14 @@ $(document).ready(function () {
     $(".dot").click(function (n) {
         _handlerShowSlides(slideIndex = (parseInt(n.currentTarget.id)));
     })
+    
+    $(".prev-dot").click(function (n) {
+        _handlerShowSlides(slideIndex += -1);
+    })
+    
+    $(".next-dot").click(function (n) {
+        _handlerShowSlides(slideIndex += 1);
+    })
 
     function _handlerShowSlides(n) {
         var i;

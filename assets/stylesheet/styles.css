@@ -219,7 +219,7 @@ html {
   }
   main .services-section .services-content {
     margin: 0 auto;
-    padding: 120px 16px;
+    padding: 120px 16px 0 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -269,7 +269,7 @@ html {
   }
   main .skills-section .skills-content {
     margin: 0 auto;
-    padding: 120px 16px;
+    padding: 120px 16px 0 16px;
   }
   main .skills-section .skills-content h1 {
     font-size: 28;
@@ -359,7 +359,7 @@ html {
   }
   main .experience-section .experience-content {
     margin: 0 auto;
-    padding: 120px 16px;
+    padding: 120px 16px 0 16px;
   }
   main .experience-section .experience-content h1 {
     font-size: 28;
@@ -386,8 +386,7 @@ html {
     color: #6f6f6f;
   }
   main .carousel-section {
-    padding: 120px 0;
-    padding: 0 16px;
+    padding: 120px 16px 0 16px;
   }
   main .carousel-section h1 {
     font-size: 28;
@@ -544,12 +543,14 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 95%;
   }
-  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .mail h3 {
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper h3 {
     font-size: 16;
     margin-bottom: 11;
     color: #5d5d5d;
@@ -564,12 +565,6 @@ html {
   main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .mail a:hover {
     text-decoration: underline;
   }
-  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .sosmed h3 {
-    font-size: 16;
-    margin-bottom: 8;
-    color: #5d5d5d;
-    font-family: "Muli-Regular";
-  }
   main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .sosmed article {
     -webkit-box-flex: 1;
         -ms-flex: auto;
@@ -582,6 +577,29 @@ html {
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
+  }
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .more-details article a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-decoration: none;
+  }
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .more-details article a p {
+    font-size: 14;
+  }
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .more-details article a:hover {
+    text-decoration: underline;
+  }
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .more-details article .icon-more-details {
+    width: 16;
+    height: 16;
+    margin-right: 8px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   main .contact-section .inner-wrapper .form-contact {
     background-color: #222;
@@ -796,7 +814,7 @@ html {
   main .home-section {
     overflow: hidden;
     margin: 0 auto;
-    padding: 40px 0;
+    padding-top: 40px;
   }
   main .home-section .home-content {
     display: -webkit-box;
@@ -872,7 +890,7 @@ html {
   }
   main .services-section .services-content {
     margin: 0 auto;
-    padding: 40px 16px 0 16px;
+    padding: 120px 16px 0 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -923,7 +941,7 @@ html {
   }
   main .skills-section .skills-content {
     margin: 0 auto;
-    padding: 40px 16px;
+    padding: 120px 16px 0 16px;
   }
   main .skills-section .skills-content h1 {
     font-size: 28;
@@ -1012,7 +1030,7 @@ html {
   }
   main .experience-section .experience-content {
     margin: 0 auto;
-    padding: 40px 16px;
+    padding: 120px 16px 0 16px;
   }
   main .experience-section .experience-content h1 {
     font-size: 28;
@@ -1039,7 +1057,7 @@ html {
     color: #6f6f6f;
   }
   main .carousel-section {
-    padding: 40px 0;
+    padding-top: 85px;
   }
   main .carousel-section h1 {
     font-size: 28;
@@ -1167,7 +1185,7 @@ html {
             flex-direction: column;
   }
   main .contact-section .inner-wrapper .content-contact {
-    padding: 40px 16px;
+    padding: 120px 16px 40px 16px;
   }
   main .contact-section .inner-wrapper .content-contact h1 {
     font-size: 28;
@@ -1195,14 +1213,14 @@ html {
             justify-content: space-between;
     width: 100%;
   }
-  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .mail {
-    margin-bottom: 24px;
-  }
-  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .mail h3 {
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper h3 {
     font-size: 16;
     margin-bottom: 8;
     color: #5d5d5d;
     font-family: "Muli-Regular";
+  }
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .mail {
+    margin-bottom: 24px;
   }
   main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .mail a {
     text-decoration: none;
@@ -1213,11 +1231,8 @@ html {
   main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .mail a:hover {
     text-decoration: underline;
   }
-  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .sosmed h3 {
-    font-size: 16;
-    margin-bottom: 8;
-    color: #5d5d5d;
-    font-family: "Muli-Regular";
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .sosmed {
+    margin-bottom: 24px;
   }
   main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .sosmed article {
     -webkit-box-flex: 1;
@@ -1231,6 +1246,29 @@ html {
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
+  }
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .more-details article a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-decoration: none;
+  }
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .more-details article a p {
+    font-size: 14;
+  }
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .more-details article a:hover {
+    text-decoration: underline;
+  }
+  main .contact-section .inner-wrapper .content-contact .sosmed-wrapper .more-details article .icon-more-details {
+    width: 16;
+    height: 16;
+    margin-right: 8px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   main .contact-section .inner-wrapper .form-contact {
     background-color: #222;

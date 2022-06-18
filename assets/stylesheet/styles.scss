@@ -219,7 +219,7 @@ html {
 
          .services-content {
             margin: 0 auto;
-            padding: 120px 16px;
+            padding: 120px 16px 0 16px;
             display: flex;
             flex-direction: column;
 
@@ -267,7 +267,7 @@ html {
 
          .skills-content {
             margin: 0 auto;
-            padding: 120px 16px;
+            padding: 120px 16px 0 16px;
 
             h1 {
                font-size: 28;
@@ -342,7 +342,7 @@ html {
 
          .experience-content {
             margin: 0 auto;
-            padding: 120px 16px;
+            padding: 120px 16px 0 16px;
 
             h1 {
                font-size: 28;
@@ -381,8 +381,7 @@ html {
       }
 
       .carousel-section {
-         padding: 120px 0;
-         padding: 0 16px;
+         padding: 120px 16px 0 16px;
 
          h1 {
             font-size: 28;
@@ -540,16 +539,18 @@ html {
                .sosmed-wrapper {
                   display: flex;
                   flex-direction: row;
+                  flex-wrap: wrap;
                   justify-content: space-between;
                   width: 95%;
 
+                  h3 {
+                     font-size: 16;
+                     margin-bottom: 11;
+                     color: #5d5d5d;
+                     font-family: "Muli-Regular";
+                  }
+
                   .mail {
-                     h3 {
-                        font-size: 16;
-                        margin-bottom: 11;
-                        color: #5d5d5d;
-                        font-family: "Muli-Regular";
-                     }
 
                      a {
                         text-decoration: none;
@@ -565,12 +566,6 @@ html {
                   }
 
                   .sosmed {
-                     h3 {
-                        font-size: 16;
-                        margin-bottom: 8;
-                        color: #5d5d5d;
-                        font-family: "Muli-Regular";
-                     }
 
                      article {
                         flex: auto;
@@ -580,6 +575,31 @@ html {
                            height: 24;
                            margin-right: 16px;
                            flex: auto;
+                        }
+                     }
+                  }
+
+                  .more-details {
+                     article {
+                        a {
+                           display: flex;
+                           flex-direction: row;
+                           text-decoration: none;
+
+                           p {
+                              font-size: 14;
+                           }
+                        }
+
+                        a:hover {
+                           text-decoration: underline;
+                        }
+
+                        .icon-more-details {
+                           width: 16;
+                           height: 16;
+                           margin-right: 8px;
+                           object-fit: contain;
                         }
                      }
                   }
@@ -832,7 +852,7 @@ html {
       .home-section {
          overflow: hidden;
          margin: 0 auto;
-         padding: 40px 0;
+         padding-top: 40px;
 
          .home-content {
             display: flex;
@@ -907,7 +927,7 @@ html {
 
          .services-content {
             margin: 0 auto;
-            padding: 40px 16px 0 16px;
+            padding: 120px 16px 0 16px;
             display: flex;
             flex-direction: column;
 
@@ -956,7 +976,7 @@ html {
 
          .skills-content {
             margin: 0 auto;
-            padding: 40px 16px;
+            padding: 120px 16px 0 16px;
 
             h1 {
                font-size: 28;
@@ -1030,7 +1050,7 @@ html {
 
          .experience-content {
             margin: 0 auto;
-            padding: 40px 16px;
+            padding: 120px 16px 0 16px;
 
             h1 {
                font-size: 28;
@@ -1069,7 +1089,7 @@ html {
       }
 
       .carousel-section {
-         padding: 40px 0;
+         padding-top: 85px;
 
          h1 {
             font-size: 28;
@@ -1202,7 +1222,7 @@ html {
             flex-direction: column;
 
             .content-contact {
-               padding: 40px 16px;
+               padding: 120px 16px 40px 16px;
 
                h1 {
                   font-size: 28;
@@ -1225,15 +1245,15 @@ html {
                   justify-content: space-between;
                   width: 100%;
 
+                  h3 {
+                     font-size: 16;
+                     margin-bottom: 8;
+                     color: #5d5d5d;
+                     font-family: "Muli-Regular";
+                  }
+
                   .mail {
                      margin-bottom: 24px;
-
-                     h3 {
-                        font-size: 16;
-                        margin-bottom: 8;
-                        color: #5d5d5d;
-                        font-family: "Muli-Regular";
-                     }
 
                      a {
                         text-decoration: none;
@@ -1249,12 +1269,7 @@ html {
                   }
 
                   .sosmed {
-                     h3 {
-                        font-size: 16;
-                        margin-bottom: 8;
-                        color: #5d5d5d;
-                        font-family: "Muli-Regular";
-                     }
+                     margin-bottom: 24px;
 
                      article {
                         flex: auto;
@@ -1264,6 +1279,31 @@ html {
                            height: 24;
                            margin-right: 16px;
                            flex: auto;
+                        }
+                     }
+                  }
+
+                  .more-details {
+                     article {
+                        a {
+                           display: flex;
+                           flex-direction: row;
+                           text-decoration: none;
+
+                           p {
+                              font-size: 14;
+                           }
+                        }
+
+                        a:hover {
+                           text-decoration: underline;
+                        }
+
+                        .icon-more-details {
+                           width: 16;
+                           height: 16;
+                           margin-right: 8px;
+                           object-fit: contain;
                         }
                      }
                   }
