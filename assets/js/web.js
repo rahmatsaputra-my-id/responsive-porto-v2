@@ -1,8 +1,12 @@
 
 $(document).ready(function () {
-    
+
     var id = setInterval(_handlerProgresBar, 25);
-    
+
+    project_budget.addEventListener('keyup', function (e) {
+        project_budget.value = formatRupiah(this.value, 'Rp ');
+    });
+
     function _handlerProgresBar() {
         if (width >= 100) {
             body.style.overflow = 'visible';
@@ -53,11 +57,11 @@ $(document).ready(function () {
     $(".dot").click(function (n) {
         _handlerShowSlides(slideIndex = (parseInt(n.currentTarget.id)));
     })
-    
+
     $(".prev-dot").click(function (n) {
         _handlerShowSlides(slideIndex += -1);
     })
-    
+
     $(".next-dot").click(function (n) {
         _handlerShowSlides(slideIndex += 1);
     })
@@ -76,6 +80,22 @@ $(document).ready(function () {
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
+    }
+
+    function formatRupiah(angka, prefix) {
+        var number_string = angka.replace(/[^,\d]/g, '').toString(),
+            split = number_string.split(','),
+            sisa = split[0].length % 3,
+            rupiah = split[0].substr(0, sisa),
+            ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+        if (ribuan) {
+            separator = sisa ? '.' : '';
+            rupiah += separator + ribuan.join('.');
+        }
+
+        rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+        return prefix == undefined ? rupiah : (rupiah ? 'Rp ' + rupiah : '');
     }
 
 });
