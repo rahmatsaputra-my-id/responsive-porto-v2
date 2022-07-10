@@ -725,10 +725,13 @@ html {
     border-bottom-style: solid;
     border-bottom-width: 0.5px;
     border-color: #424245;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding: 24px 16px 32px 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 16px;
   }
   header .header-mobile-section .header-content .inner-wrapper .side-drawer-wrapper .icon-close {
     width: 24px;
@@ -736,14 +739,9 @@ html {
   }
   header .header-mobile-section .header-content .inner-wrapper .side-drawer-wrapper .icon-logo {
     width: 100%;
-    max-height: 75px;
+    max-height: 80px;
     -o-object-fit: contain;
        object-fit: contain;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: -1;
   }
   header .header-mobile-section .header-content .inner-wrapper .nav-link-mobile {
     text-decoration: none;
@@ -793,12 +791,6 @@ html {
   header .header-mobile-section .header-bar section .icon-menu {
     width: 32px;
     height: 32px;
-  }
-  header .header-mobile-section .header-bar section .icon-logo-header {
-    width: 100%;
-    max-height: 75px;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
   header .header-mobile-section .header-bar section .icon-logo {
     width: 100%;

@@ -38,6 +38,10 @@ $(document).ready(function () {
     $(".icon-close").click(function () {
         $(".header-content").hide()
     })
+    
+    $("#icon-close").click(function () {
+        $(".header-content").hide()
+    })
 
     $(".nav-link-mobile").click(function () {
         $(".header-content").hide()
