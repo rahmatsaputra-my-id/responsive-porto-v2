@@ -741,32 +741,32 @@ html {
             .inner-wrapper {
                display: flex;
                flex-direction: column;
-               padding: 16px 0;
+               padding-bottom: 16px;
 
 
                .side-drawer-wrapper {
                   margin-bottom: 48px;
                   display: flex;
                   flex-direction: row;
-                  align-content: center;
                   border-bottom-style: solid;
                   border-bottom-width: 0.5px;
                   border-color: #424245;
-                  padding: 16px 16px 32px 16px;
+                  justify-content: flex-end;
+                  padding: 24px 16px 32px 16px;
 
                   .icon-close {
-                     width: 32;
-                     height: 32;
+                     width: 24px;
+                     height: 24px;
                   }
 
                   .icon-logo {
                      width: 100%;
-                     max-height: 78;
+                     max-height: 75px;
                      object-fit: contain;
                      position: absolute;
                      left: 0;
                      right: 0;
-                     top: 1%;
+                     top: 0;
                      z-index: -1;
                   }
                }
@@ -802,19 +802,33 @@ html {
                align-items: center;
                padding: 0 16px;
 
-               .icon-menu {
-                  width: 32;
-                  height: 32;
+               article {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
                }
 
+               .icon-menu {
+                  width: 32px;
+                  height: 32px;
+               }
+
+               .icon-logo-header {
+                  width: 100%;
+                  max-height: 75px;
+                  object-fit: contain;
+               }
+               
                .icon-logo {
                   width: 100%;
-                  max-height: 80;
+                  max-height: 80px;
                   object-fit: contain;
                }
 
                .nav-link-button {
                   text-decoration: none;
+                  margin-right: 16px;
 
                   span {
                      width: 100%;
@@ -871,6 +885,7 @@ html {
                   color: #212121;
                   line-height: 120%;
                   margin-bottom: 24px;
+                  text-align: center;
 
                   span {
                      font-size: 48;
@@ -882,6 +897,7 @@ html {
                h2 {
                   font-size: 22px;
                   color: #6f6f6f;
+                  text-align: center;
                }
             }
 

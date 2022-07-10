@@ -1,23 +1,23 @@
 
 $(document).ready(function () {
 
-    var id = setInterval(_handlerProgresBar, 25);
+    // var id = setInterval(_handlerProgresBar, 25);
 
     project_budget.addEventListener('keyup', function (e) {
         project_budget.value = formatRupiah(this.value, 'Rp ');
     });
 
-    function _handlerProgresBar() {
-        if (width >= 100) {
-            body.style.overflow = 'visible';
-            progressContainer.style.display = 'none';
-            clearInterval(id);
-        } else {
-            width++;
-            body.style.overflow = 'hidden';
-            progressBar.style.width = width + '%';
-        }
-    }
+    // function _handlerProgresBar() {
+    //     if (width >= 100) {
+    //         body.style.overflow = 'visible';
+    //         progressContainer.style.display = 'none';
+    //         clearInterval(id);
+    //     } else {
+    //         width++;
+    //         body.style.overflow = 'hidden';
+    //         progressBar.style.width = width + '%';
+    //     }
+    // }
 
     window.onscroll = () => { _handlerHeaderFixed() }
 
