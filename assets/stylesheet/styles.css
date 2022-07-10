@@ -548,7 +548,7 @@ html {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 95%;
+    width: 80%;
   }
   main .contact-section .inner-wrapper .content-contact .sosmed-wrapper h3 {
     font-size: 16;
