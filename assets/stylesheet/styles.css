@@ -1103,19 +1103,18 @@ html {
     /* Fading animation */
     /* On smaller screens, decrease text size */
   }
-  main .carousel-section .slider .mySlides {
+  main .carousel-section .slider .slideshow-container {
+    position: relative;
+    padding: 0 16px;
+  }
+  main .carousel-section .slider .slideshow-container .mySlides {
     display: none;
   }
-  main .carousel-section .slider .mySlides img {
+  main .carousel-section .slider .slideshow-container .mySlides img {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
     vertical-align: middle;
-  }
-  main .carousel-section .slider .slideshow-container {
-    overflow: hidden;
-    position: relative;
-    margin: 0 16px;
   }
   main .carousel-section .slider .prev,
   main .carousel-section .slider .next {

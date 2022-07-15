@@ -1113,23 +1113,21 @@ html {
             margin: 0 auto;
             box-sizing: border-box;
 
-
-            .mySlides {
-               display: none;
-
-               img {
-                  width: 100%;
-                  object-fit: contain;
-                  vertical-align: middle;
-               }
-            }
-
             /* Slideshow container */
             .slideshow-container {
-               // max-width: 400px;
-               overflow: hidden;
+               // overflow: hidden;
                position: relative;
-               margin: 0 16px;
+               padding: 0 16px;
+
+               .mySlides {
+                  display: none;
+   
+                  img {
+                     width: 100%;
+                     object-fit: contain;
+                     vertical-align: middle;
+                  }
+               }
             }
 
             /* Next & previous buttons */
