@@ -1104,7 +1104,7 @@ html {
     /* On smaller screens, decrease text size */
   }
   main .carousel-section .slider img {
-    width: 100%;
+    width: 400px;
     -o-object-fit: contain;
        object-fit: contain;
     vertical-align: middle;
