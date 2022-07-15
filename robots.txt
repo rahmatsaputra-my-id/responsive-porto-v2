@@ -4,3 +4,5 @@ Disallow: /tmp/            # disallow this directory
 Disallow: /src/            # disallow this directory
 Disallow: /assets/         # disallow this directory
 Crawl-delay: 10
+
+Sitemap: https://www.rahmatsaputra.my.id/sitemap.xml
