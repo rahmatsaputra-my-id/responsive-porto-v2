@@ -102,4 +102,9 @@ $(document).ready(function () {
     //     return prefix == undefined ? rupiah : (rupiah ? 'Rp ' + rupiah : '');
     // }
 
+
+    // Setting Current Year
+    const d = new Date();
+    let currentYear = d.getFullYear();
+    current_year.innerHTML = currentYear;
 });
