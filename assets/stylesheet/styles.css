@@ -1113,9 +1113,9 @@ html {
     display: none;
   }
   main .carousel-section .slider .slideshow-container {
-    max-width: 1000px;
+    max-width: 400px;
     position: relative;
-    margin: auto;
+    margin: 0 16px;
   }
   main .carousel-section .slider .prev,
   main .carousel-section .slider .next {
