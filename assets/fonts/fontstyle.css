@@ -6,6 +6,7 @@
         url('Muli-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
         url('Muli-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -26,6 +28,7 @@
         url('Muli-ExtraBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Muli-SemiBold';
@@ -35,6 +38,7 @@
         url('Muli-SemiBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Muli-Medium';
@@ -44,5 +48,6 @@
         url('Muli-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
