@@ -178,7 +178,8 @@ html {
             aside {
                img {
                   object-fit: contain;
-                  max-height: 500px;
+                  height: 500px;
+                  width: 280px;
                }
             }
          }
@@ -891,11 +892,12 @@ html {
             }
 
             aside {
-               display: contents;
+               text-align: center;
                
                img {
                   object-fit: contain;
                   height: 500px;
+                  width: 280px;
                }
             }
          }

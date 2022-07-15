@@ -181,7 +181,8 @@ html {
   main .home-section .home-content aside img {
     -o-object-fit: contain;
        object-fit: contain;
-    max-height: 500px;
+    height: 500px;
+    width: 280px;
   }
   main .home-section .home-sosmed-container {
     display: -webkit-box;
@@ -872,12 +873,13 @@ html {
     text-align: center;
   }
   main .home-section .home-content aside {
-    display: contents;
+    text-align: center;
   }
   main .home-section .home-content aside img {
     -o-object-fit: contain;
        object-fit: contain;
     height: 500px;
+    width: 280px;
   }
   main .home-section .home-sosmed-container {
     display: -webkit-box;
