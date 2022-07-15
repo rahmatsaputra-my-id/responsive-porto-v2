@@ -1105,7 +1105,8 @@ html {
   }
   main .carousel-section .slider .slideshow-container {
     position: relative;
-    padding: 0 16px;
+    padding: 0 -16px;
+    margin: 0 16px;
   }
   main .carousel-section .slider .slideshow-container .mySlides {
     display: none;
