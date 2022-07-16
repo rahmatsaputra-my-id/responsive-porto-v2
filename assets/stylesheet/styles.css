@@ -166,18 +166,18 @@ html {
         align-self: center;
   }
   main .home-section .home-content article h1 {
-    font-size: 48;
+    font-size: 48px;
     color: #212121;
   }
   main .home-section .home-content article h1 span {
-    font-size: 56;
+    font-size: 56px;
     font-family: "Muli-Bold";
     color: #212121;
   }
   main .home-section .home-content article h2 {
     width: 80%;
     text-align: justify;
-    font-size: 24;
+    font-size: 22px;
     color: #6f6f6f;
   }
   main .home-section .home-content aside img {
@@ -870,7 +870,7 @@ html {
     color: #212121;
   }
   main .home-section .home-content article h2 {
-    font-size: 22px;
+    font-size: 20px;
     color: #6f6f6f;
     text-align: center;
   }
