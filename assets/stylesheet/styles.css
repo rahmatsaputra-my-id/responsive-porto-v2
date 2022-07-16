@@ -175,6 +175,8 @@ html {
     color: #212121;
   }
   main .home-section .home-content article h2 {
+    width: 80%;
+    text-align: justify;
     font-size: 24;
     color: #6f6f6f;
   }
