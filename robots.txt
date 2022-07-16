@@ -2,6 +2,5 @@ User-agent: *              # any robot
 Disallow: /cgi-bin/        # disallow this directory
 Disallow: /tmp/            # disallow this directory
 Disallow: /src/            # disallow this directory
-Disallow: /assets/         # disallow this directory
 
 Sitemap: https://www.rahmatsaputra.my.id/sitemaps
